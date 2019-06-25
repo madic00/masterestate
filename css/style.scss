@@ -90,7 +90,8 @@ button {
 }
 
 #heroIndex {
-    z-index: -1000;
+    position: relative;
+    margin-bottom: -60px;
 }
 
 .blueButton {
@@ -108,16 +109,6 @@ button {
 #fyp {
     min-height: 400px;
 
-    .containerEdge {
-        margin-top: -40px;
-        z-index: 10;
-        background-color: #fff;
-
-        .sectionTitle {
-            padding-top: 30px;
-        }
-    }
-
     select {
         margin-bottom: 1.5rem;
     }
@@ -128,6 +119,63 @@ button {
 
 }
 
+.containerEdge {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+
+    .sectionTitle {
+        padding-top: 30px;
+    }
+}
+
+
+/* SERVICES */
+#services {
+    min-height: 480px;
+    background-image: url('../img/service.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0px;
+    color: #fff;
+
+    #statsImg {
+        padding-right: 40px;
+    }
+    
+    .sectionTitle {
+        padding-top: 0px;
+        text-align: left;
+    }
+
+    .underline {
+        margin: 10px 0px 30px;
+    }
+
+}
+
+.iconwtext {
+    margin-bottom: 30px;
+
+    i {
+        height: 60px;
+        width: 60px;
+        background: $plava;
+        border-radius: 50%;
+        text-align: center;
+        padding: 14px;
+        font-size: 24px;
+        margin-right: 30px;
+        display: inline-block;
+    }
+    div {
+        width: 100%;
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
 
 /* FEATURED PROPERTY */
 #featured {
@@ -179,53 +227,32 @@ button {
 
 }
 
-
-/* SERVICES */
-#services {
-    min-height: 480px;
-    background-image: url('../img/service.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 0px;
+/* SUCCESS */
+#success {
+    background-image: url('../img/success.jpeg');
     color: #fff;
+    z-index: 1;
+    margin-bottom: -60px;
 
-    #statsImg {
-        padding-right: 40px;
+    .transparent {
+        background-color: rgba(0, 0, 0, 0.7) !important;
     }
     
-    .sectionTitle {
-        padding-top: 0px;
-        text-align: left;
-    }
+    #stats {
+        margin-top: 10%;
+        text-align: center;
+        text-transform: uppercase;
 
-    .underline {
-        margin: 10px 0px 30px;
-    }
+        p {
+            font-size: 1.5em;
+        }
 
+        .number {
+            font-size: 1.5em;
+            color: $plava;
+        }
+    }
 }
-
-.iconwtext {
-        margin-bottom: 30px;
-
-        i {
-            height: 60px;
-            width: 60px;
-            background: $plava;
-            border-radius: 50%;
-            text-align: center;
-            padding: 14px;
-            font-size: 24px;
-            margin-right: 30px;
-            display: inline-block;
-        }
-        div {
-            width: 100%;
-
-            p {
-                font-size: 13px;
-            }
-        }
-    }
 
 
 /* LATEST LIST */
@@ -233,9 +260,12 @@ button {
     padding-bottom: 60px;
     background-color: #f0f2f7;
 
-    .row {
-        margin-top: 10px;
+    .containerEdge {
+        background-color: #f0f2f7;
+    }
 
+    .row {
+        margin-top: 80px;
     }
     
     .overlay {
@@ -291,65 +321,6 @@ button {
     }
 }
 
-
-/* SUCCESS */
-#success {
-    background-image: url('../img/success.jpeg');
-    color: #fff;
-    
-    #stats {
-        margin-top: 17%;
-        text-align: center;
-        text-transform: uppercase;
-
-        p {
-            font-size: 1.5em;
-        }
-
-        .number {
-            font-size: 1.5em;
-            color: $plava;
-        }
-        
-    }
-}
-
-/* OUR AGENTS */
-#agents {
-    background-image: url('../img/agents.jpg');
-    text-align: center;
-    padding-bottom: 60px;
-
-    p {
-        width: 256px;
-        font-size: 2em;
-    }
-
-    img {
-        width: 200px;
-    }
-
-    ul li {
-        display: inline-block;
-    }
-
-    .fa {
-        padding: 10px 25px 10px 10px;
-        font-size: 20px;
-        width: 30px;
-        text-align: center;
-        margin: 5px 2px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        color: #fff;
-
-        &:hover {
-            color: $plava;
-            border-color: $plava;
-        }
-    }
-
-}
 
 /* FOOTER */
 footer {
@@ -559,5 +530,22 @@ textarea {
     img {
         border-radius: 3px;
         box-shadow: 6px 6px 5px;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .fa {
+        padding: 10px 25px 10px 10px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        margin: 5px 2px;
+        border-radius: 50%;
+
+        &:hover {
+            border-color: $plava;
+        }
     }
 }
