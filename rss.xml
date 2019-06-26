@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <rss version="2.0">
 	<channel>
-		<title>Nova kolekcija</title>
-		<link>https://madic00.github.io/Arhaik/prodavnica.html</link>
-		<description>Budite u toku sa našim novim akcijama</description>
+		<title>New apartmant</title>
+		<link>https://madic00.github.io/masterestate/buy.html</link>
+		<description>Check our new apartmant in Atlanta</description>
 		<item>
-			<title>Novi džemperi</title>
-			<description>Ekskluzivo pogledajte našu novu kolekciju džempera</description>
-			<link>https://madic00.github.io/Arhaik/prodavnica.html</link>
+			<title>New House in LA</title>
+			<description>Check our new exclusively house in LA</description>
+			<link>https://madic00.github.io/masterestate/buy.html</link>
 		</item>
 		<item>
-			<title>Nova boja</title>
-			<description>Zbog vašeg velikog broja zahteva uveli smo i džemper žute boje.</description>
-			<link>https://madic00.github.io/Arhaik/prodavnica</link>
+			<title>New Property on Hawaii</title>
+			<description>Check this new tropical property on Hawaii.</description>
+			<link>https://madic00.github.io/masterestate/buy.html</link>
 		</item>
 	</channel>
 </rss>
