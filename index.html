@@ -10,10 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>Master Real Estate</title>
+    <link rel="shortcut icon" href="img/logo.png" />
 </head>
 
 <body>
@@ -21,47 +23,57 @@
     <header class="hero" id="heroIndex">
         <div class="transparent">
 
-            <div class="navWrapper">
-                <nav class="navbar navbar-expand-lg" id="navbar">
-                    <a class="navbar-brand" href="#"> 
-                        <img src="img/logoFinal.png" alt="logo" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="buy.html">buy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">latest</a>
-                            </li>
+            <nav id="nav-fluid">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo logo"><img src="img/logo.png" alt="Logo"/></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="nav-item">
+                            <a href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="buy.html">buy</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="author.html">author</a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             
-                            <li class="nav-item">
-                                <a class="nav-link" href="author.html">author</a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <ul class="sidenav float-right" id="mobile-demo">
+                <li class="nav-item">
+                    <a href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="buy.html">buy</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="author.html">author</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
 
             <div class="container" id="headerText">
-                <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+                <h1 class="text-uppercase">Master real estate</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat veritatis exercitationem necessitatibus hic nihil neque e.</p>
-                <button type="button" class="btn btn-outline-primary blueButton">Find your place</button>
-                <button type="button" class="btn btn-primary blueButton">featured list</button>
+                <a href="#latest">
+                    <button type="button" class="btn btn-outline-primary blueButton">Latest Properties</button>
+                </a>
+                <a href="#featured">
+                    <button type="button" class="btn btn-primary blueButton">featured property</button>
+                </a>
             </div>
         </div>
     </header>
@@ -76,44 +88,43 @@
                 
             <div class="form-group">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <select class="form-control" id="exampleFormControlSelect1">
                             <option>All locations</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>New York City</option>
+                            <option>Los Angeles</option>
+                            <option>Chicago</option>
+                            <option>Miami</option>
+                            <option>Hawaii</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Sub location</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect2">
+                            <option>All property types</option>
+                            <option>Apart.</option>
+                            <option>Building area</option>
+                            <option>Condo</option>
+                            <option>House</option>
+                            <option>Villa</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect3">
                             <option>Status</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>Available</option>
+                            <option>Rent agreed</option>
+                            <option>Reserved</option>
+                            <option>Sell agreed</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Property type</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect4">
+                            <option>Material</option>
+                            <option>Wood</option>
+                            <option>Block</option>
+                            <option>Mixed</option>
+                            <option>Stone</option>
+                            <option>Brick</option>
                         </select>
                     </div>
                 </div>
@@ -121,44 +132,43 @@
             
             <div class="form-group">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Bedrooms</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect5">
+                            <option>Rooms</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5+</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>All locations</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect6">
+                            <option>Baths</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5+</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Status</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect7">
+                            <option>Bed</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5+</option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Property type</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <select class="form-control" id="exampleFormControlSelect8">
+                            <option>Addition</option>
+                            <option>Basketball</option>
+                            <option>Tennis</option>
+                            <option>Volleyball</option>
+                            <option>Swimming pool</option>
                         </select>
                     </div>
                 </div>
@@ -167,7 +177,9 @@
             
             <div class="row">
                 <div class="col text-center">
-                    <button type="search" class="btn btn-primary blueButton">search</button>
+                    <a href="buy.html">
+                        <button type="search" class="btn btn-primary blueButton">search</button>
+                    </a>
                 </div>
             </div>
             
@@ -177,11 +189,11 @@
     <div class="container-fluid" id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7" id="statsImg">
+                <div class="col-lg-7 col-sm-12" id="statsImg">
                     <img class="img-fluid" src="img/serviceStats.jpeg" alt="Statistics from our services" />
                 </div>
     
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-sm-12">
                     <h2 class="sectionTitle">Our services</h2>
                     <div class="underline"></div>
                     <div class="servicesList">
@@ -227,7 +239,7 @@
                 </div>
 
                 <div class="col-lg-7 my-auto" id="featuredImg">
-                    <img src="img/featured.jpeg" alt="featured property" />
+                    <img src="img/featured.jpg" alt="featured property" />
                 </div>
             </div>
         </div>
@@ -242,21 +254,21 @@
             <div class="container">
         
                 <div class="row d-flex" id="stats">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <p class="number">1246</p>
                         <p>advertisement</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <p class="number">478</p>
                         <p>sales</p>
                     </div>
         
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <p class="number">663</p>
                         <p>rents</p>
                     </div>
         
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <p class="number">2457</p>
                         <p>users</p>
                     </div>
@@ -279,16 +291,16 @@
                 <div class="col-lg-6 col-md-12 imgContainer">
                     <img class="img-fluid" src="img/apartman1.jpg" alt="Apartmant in Downtown" />
                     <div class="overlay">
-                        <p class="leftbottom">lorem ipsum dolor sit amet</p>
-                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>76 m<sup>2</sup></p>
+                        <p class="leftbottom text-uppercase">lorem ipsum dolor sit amet</p>
+                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>760 square foot  <i class="fa fa-th-large"></i></p>
                     </div>
                 </div>
     
                 <div class="col-lg-6 col-md-12 imgContainer">
                     <img class="img-fluid" src="img/apartman2.jpg" alt="Apartmant in Downtown" />
                     <div class="overlay">
-                        <p class="leftbottom">lorem ipsum dolor sit amet</p>
-                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>76 m<sup>2</sup></p>
+                        <p class="leftbottom text-uppercase">lorem ipsum dolor sit amet</p>
+                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>760 square foot <i class="fa fa-th-large"></i></p>
                     </div>
                 </div>
             </div>
@@ -297,16 +309,16 @@
                 <div class="col-lg-6 col-md-12 imgContainer">
                     <img class="img-fluid" src="img/apartman2.jpg" alt="Apartmant in Downtown" />
                     <div class="overlay">
-                        <p class="leftbottom">lorem ipsum dolor sit amet</p>
-                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>76 m<sup>2</sup></p>
+                        <p class="leftbottom text-uppercase">lorem ipsum dolor sit amet</p>
+                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>760 square foot <i class="fa fa-th-large"></i></p>
                     </div>
                 </div>
     
                 <div class="col-lg-6 col-md-12 imgContainer">
                     <img class="img-fluid" src="img/apartman1.jpg" alt="Apartmant in Downtown" />
                     <div class="overlay">
-                        <p class="leftbottom">lorem ipsum dolor sit amet</p>
-                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>76 m<sup>2</sup></p>
+                        <p class="leftbottom text-uppercase">lorem ipsum dolor sit amet</p>
+                        <p class="rightbottom">5 <i class="fa fa-bed mr-3"></i>760 square foot <i class="fa fa-th-large"></i></p>
                     </div>
                 </div>
             </div>
@@ -317,12 +329,12 @@
     <div class="container-fluid" id="newsletter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-12">
                     <h2 class="text-uppercase">newsletter</h2>
                 </div>
     
     
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-md-10">
                     <form class="form-inline">
                         <input type="email" class="form-control" id="mailfornl" name="email"
                             placeholder="Enter your email address" />
@@ -340,26 +352,40 @@
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>master real estate</h3>
-                    <p>Adress: <br /> 123 Main St. <br />Chicago, Il 60222</p>
-                    <p>Phone: <br /> +01(2) 345 67 89</p>
-                    <p>Email: <br /> email@example.com</p>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <h3>Useful Links</h3>
+                    <div class="useful">
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    
+                            <li><a href="https://www.google.com" target="_blank"><i class="fa fa-google"></i></a></li>
+                    
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful">
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                    
+                            <li><a href="https://www.google.com" target="_blank"><i class="fa fa-sitemap"></i></a></li>
+                    
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-code"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div class="col">
-                    <h3>site map</h3>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <h3>quick links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Buy</a></li>
-                        <li><a href="#">Rent</a></li>
-                        <li><a href="#">Agents</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-4 col-sm-12">
                     <h3>email us</h3>
                     <form>
                         <div class="form-group">
@@ -367,10 +393,7 @@
                             name="mailform" id="exampleInputEmail1" aria-describedby="emailHelp"
                                 placeholder="Enter email" />
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="passwordform" id="exampleInputPassword1" placeholder="Password"/>
-                        </div>
-
+                       
                         <div class="form-group">
                             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
                         </div>
@@ -387,15 +410,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="css/materialize/js/materialize.js"></script>
     <script src="js/app.js"></script>   
 </body>
 </html>

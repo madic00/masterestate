@@ -6,13 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>Master Real Estate</title>
+    <link rel="shortcut icon" href="img/logo.png" />
 </head>
 
 <body>
@@ -20,42 +23,47 @@
     <header class="hero" id="buyHero">
         <div class="transparent">
 
-            <div class="navWrapper">
-                <nav class="navbar navbar-expand-lg" id="navbar">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">about</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="buy.html">buy</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">latest</a>
-                            </li>
+            <nav id="nav-fluid">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo logo"><img src="img/logo.png" alt="Logo" /></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="nav-item">
+                            <a href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="buy.html">buy</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="author.html">author</a>
+                        </li>
+            
+            
+                        <li class="nav-item">
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="author.html">author</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <ul class="sidenav float-right" id="mobile-demo">
+                <li class="nav-item">
+                    <a href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="buy.html">buy</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="author.html">author</a>
+                </li>
+            
+            
+                <li class="nav-item">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
 
             <div class="container welcome">
                 <h1>Properties</h1>
@@ -182,21 +190,31 @@
                                             </div>
 
                                             <div class="row">
-                                                <h3>Property details</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam! Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam! Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+
                                             </div>
 
-                                            <div class="row">
-                                                <h3 class="w-100">Property overview</h3>
-                                                <div class="w-50">
-                                                    <ul class="collection">
-                                                        <li class="collection-item">Alvin</li>
-                                                        <li class="collection-item">Alvin</li>
-                                                        <li class="collection-item">Alvin</li>
-                                                        <li class="collection-item">Alvin</li>
-                                                    </ul>
-                                                </div>   
-                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -212,32 +230,88 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
-                        <img class="card-img-top" src="img/properties/img-1.jpg" alt="Card image cap" />
+                        <img class="card-img-top" src="img/properties/img-2.jpg" alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">Via DI BOCCEA ST</h5>
-                            <p class="card-text">4 rooms 3 beds 1 bath</p>
+                            <h5 class="card-title text-center">1963 S Crescent Heights Blvd</h5>
+                            <p class="text-center"><i class="fa fa-map-marker mr-2"></i>Los Angeles, CA 90034</p>
                             <hr />
-                            <p class="price"><b>$75,000</b></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                View details
-                            </button>
+                            <div class="card-text float-left mr-3">
+                                <p><i class="fa fa-th-large mr-2"></i>800 Square foot</p>
+                                <p><i class="fa fa-bed mr-2"></i>4 bedrooms</p>
+                
+                            </div>
+                            <div class="card-text float-right">
+                                <p class=""><i class="fa fa-bath mr-2"></i>2 Bathrooms</p>
+                                <p class=""><i class="fa fa-car mr-2"></i>2 Garages</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr />
+                            <p class="price text-center"><b>$75,000</b></p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View details
+                                </button>
+                            </div>
                 
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title sectionTitle" id="exampleModalLabel">1963 S Crescent Heights Blvd
+                                            </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-2.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-3.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-4.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                            </div>
+                
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore
+                                                        animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam!
+                                                        Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                
                                         </div>
                                     </div>
                                 </div>
@@ -249,32 +323,88 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
-                        <img class="card-img-top" src="img/properties/img-1.jpg" alt="Card image cap" />
+                        <img class="card-img-top" src="img/properties/img-3.jpg" alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">Via DI BOCCEA ST</h5>
-                            <p class="card-text">4 rooms 3 beds 1 bath</p>
+                            <h5 class="card-title text-center">1963 S Crescent Heights Blvd</h5>
+                            <p class="text-center"><i class="fa fa-map-marker mr-2"></i>Los Angeles, CA 90034</p>
                             <hr />
-                            <p class="price"><b>$75,000</b></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                View details
-                            </button>
+                            <div class="card-text float-left mr-3">
+                                <p><i class="fa fa-th-large mr-2"></i>800 Square foot</p>
+                                <p><i class="fa fa-bed mr-2"></i>4 bedrooms</p>
+                
+                            </div>
+                            <div class="card-text float-right">
+                                <p class=""><i class="fa fa-bath mr-2"></i>2 Bathrooms</p>
+                                <p class=""><i class="fa fa-car mr-2"></i>2 Garages</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr />
+                            <p class="price text-center"><b>$75,000</b></p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View details
+                                </button>
+                            </div>
                 
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title sectionTitle" id="exampleModalLabel">1963 S Crescent Heights Blvd
+                                            </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-2.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-3.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-4.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                            </div>
+                
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore
+                                                        animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam!
+                                                        Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                
                                         </div>
                                     </div>
                                 </div>
@@ -286,32 +416,274 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
-                        <img class="card-img-top" src="img/properties/img-1.jpg" alt="Card image cap" />
+                        <img class="card-img-top" src="img/properties/img-4.jpg" alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">Via DI BOCCEA ST</h5>
-                            <p class="card-text">4 rooms 3 beds 1 bath</p>
+                            <h5 class="card-title text-center">1963 S Crescent Heights Blvd</h5>
+                            <p class="text-center"><i class="fa fa-map-marker mr-2"></i>Los Angeles, CA 90034</p>
                             <hr />
-                            <p class="price"><b>$75,000</b></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                View details
-                            </button>
+                            <div class="card-text float-left mr-3">
+                                <p><i class="fa fa-th-large mr-2"></i>800 Square foot</p>
+                                <p><i class="fa fa-bed mr-2"></i>4 bedrooms</p>
+                
+                            </div>
+                            <div class="card-text float-right">
+                                <p class=""><i class="fa fa-bath mr-2"></i>2 Bathrooms</p>
+                                <p class=""><i class="fa fa-car mr-2"></i>2 Garages</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr />
+                            <p class="price text-center"><b>$75,000</b></p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View details
+                                </button>
+                            </div>
                 
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title sectionTitle" id="exampleModalLabel">1963 S Crescent Heights Blvd
+                                            </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-2.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-3.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-4.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                            </div>
+                
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore
+                                                        animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam!
+                                                        Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/properties/img-5.jpg" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">1963 S Crescent Heights Blvd</h5>
+                            <p class="text-center"><i class="fa fa-map-marker mr-2"></i>Los Angeles, CA 90034</p>
+                            <hr />
+                            <div class="card-text float-left mr-3">
+                                <p><i class="fa fa-th-large mr-2"></i>800 Square foot</p>
+                                <p><i class="fa fa-bed mr-2"></i>4 bedrooms</p>
+                
+                            </div>
+                            <div class="card-text float-right">
+                                <p class=""><i class="fa fa-bath mr-2"></i>2 Bathrooms</p>
+                                <p class=""><i class="fa fa-car mr-2"></i>2 Garages</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr />
+                            <p class="price text-center"><b>$75,000</b></p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View details
+                                </button>
+                            </div>
+                
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title sectionTitle" id="exampleModalLabel">1963 S Crescent Heights Blvd
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-2.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-3.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-4.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                            </div>
+                
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore
+                                                        animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam!
+                                                        Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/properties/img-6.jpg" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">1963 S Crescent Heights Blvd</h5>
+                            <p class="text-center"><i class="fa fa-map-marker mr-2"></i>Los Angeles, CA 90034</p>
+                            <hr />
+                            <div class="card-text float-left mr-3">
+                                <p><i class="fa fa-th-large mr-2"></i>800 Square foot</p>
+                                <p><i class="fa fa-bed mr-2"></i>4 bedrooms</p>
+                
+                            </div>
+                            <div class="card-text float-right">
+                                <p class=""><i class="fa fa-bath mr-2"></i>2 Bathrooms</p>
+                                <p class=""><i class="fa fa-car mr-2"></i>2 Garages</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr />
+                            <p class="price text-center"><b>$75,000</b></p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View details
+                                </button>
+                            </div>
+                
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title sectionTitle" id="exampleModalLabel">1963 S Crescent Heights Blvd
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-2.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-3.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img class="img-fluid" src="img/properties/1/property-4.jpg"
+                                                        alt="Interior of house in LA" />
+                                                </div>
+                                            </div>
+                
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property details</h3>
+                                                    <div class="underline"></div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam dolore
+                                                        animi reprehenderit delectus, nobis incidunt sit tempore nihil laboriosam!
+                                                        Suscipit fugit aut modi debitis eaque? Nihil adipisci beatae in!</p>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <h3>Property overview</h3>
+                                                    <div class="underline"></div>
+                                                    <ul>
+                                                        <li>Sauna</li>
+                                                        <li>Outdoor Kitchen</li>
+                                                        <li>Trees and Landscaping</li>
+                                                        <li>Family Room</li>
+                                                    </ul>
+                                                    <ul class="float-right">
+                                                        <li>Fireplace or fire pit</li>
+                                                        <li>Basketball Court</li>
+                                                        <li>Sun Roomng</li>
+                                                        <li>Concrete Flooring</li>
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
                                         </div>
                                     </div>
                                 </div>
@@ -349,55 +721,68 @@
     </div>
 
 
-     <footer class="container-fluid">
-        <div class="container myContainer">
+    <footer class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>master real estate</h3>
-                    <p>Adress: <br /> 123 Main St. <br />Chicago, Il 60222</p>
-                    <p>Phone: <br /> +01(2) 345 67 89</p>
-                    <p>Email: <br /> email@example.com</p>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <h3>Useful Links</h3>
+                    <div class="useful">
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    
+                            <li><a href="https://www.google.com" target="_blank"><i class="fa fa-google"></i></a></li>
+    
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="useful">
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-rss"
+                                        aria-hidden="true"></i></a></li>
+    
+                            <li><a href="https://www.google.com" target="_blank"><i class="fa fa-sitemap"></i></a></li>
+    
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-code"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col">
-                    <h3>site map</h3>
+    
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <h3>quick links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Buy</a></li>
-                        <li><a href="#">Rent</a></li>
-                        <li><a href="#">Agents</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="col">
+    
+                <div class="col-lg-4 col-sm-12">
                     <h3>email us</h3>
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control"
-                            name="mailform" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Enter email" />
+                            <input type="email" class="form-control" name="mailform" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" />
                         </div>
+    
                         <div class="form-group">
-                            <input type="password" class="form-control" name="passwordform" id="exampleInputPassword1" placeholder="Password"/>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                                rows="4"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary float-right">Submit</button>
                     </form>
                 </div>
             </div>
-
+    
             <hr />
             <p>Terms & Conditions and Privacy Policy | &copy; Master Real Estate. All Rights Reserved. 2019.</p>
         </div>
-    </footer>   
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -407,6 +792,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="css/materialize/js/materialize.js"></script>
     <script src="js/app.js"></script>
 </body>
 

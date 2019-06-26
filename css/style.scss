@@ -4,6 +4,7 @@ $plava: #007bff;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -63,10 +64,12 @@ button {
     position: relative;
     color: #fff;
 
-    #navbar {
+    #nav-fluid {
         width: 100%;
-        border-bottom: 1px solid #fff;
-        padding: 0.5rem 3rem;
+    }
+
+    .logo {
+        padding-bottom: 1rem;
     }
 
     a {
@@ -195,7 +198,7 @@ button {
     #desc {
         background-color: #fff;
         width: 100%;
-        padding: 4rem 4.2rem;
+        padding: 3rem 4.2rem;
         line-height: 2;
         position: relative;
         top: 0px;
@@ -263,10 +266,6 @@ button {
     .containerEdge {
         background-color: #f0f2f7;
     }
-
-    .row {
-        margin-top: 80px;
-    }
     
     .overlay {
         opacity: 0;
@@ -276,9 +275,16 @@ button {
     .imgContainer {
         position: relative;
         color: #fff;
+        margin-bottom: 30px;
 
-        &:hover .overlay {
-            opacity: 1;
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 17px;
         }
 
         img {
@@ -286,7 +292,6 @@ button {
 
             &:hover {
                 box-shadow: 1px 8px 20px grey;
-                // transform: scale(1.05);
                 transition: all 0.5s cubic-bezier(.25,.8,.25,1);
             }
         }
@@ -338,6 +343,29 @@ footer {
         padding: 5px 30px;
     }
 
+    .useful ul li {
+        display: inline-block;
+    }
+
+}
+
+.useful, .custom {
+    .fa {
+    height: 40px;
+    width: 40px;
+    background: $plava;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+    font-size: 15px;
+    margin-right: 20px;
+    display: inline-block;
+
+    &:hover {
+        border-color: $plava;
+    }
+    
+    }
 }
 
 textarea {
@@ -477,7 +505,28 @@ textarea {
             font-size: 18px;
         }
     }
-    
+
+    .modal-body  {
+        ul {
+            display: inline-block;
+
+            li::before {
+                font-family: 'fontawesome';
+                line-height: 1;
+                content: "\f111";
+                color: #1396e2;
+                font-size: 8px;
+                position: relative;
+                bottom: 2px;
+                margin-right: 10px;
+
+            }
+        }
+
+        .underline {
+            margin: 10px 0px 30px;
+        }
+    }
 
     #pagination {
         width: 200px;
@@ -535,17 +584,59 @@ textarea {
     ul li {
         display: inline-block;
     }
+    
+}
 
-    .fa {
-        padding: 10px 25px 10px 10px;
-        font-size: 20px;
-        width: 30px;
-        text-align: center;
-        margin: 5px 2px;
-        border-radius: 50%;
+@media screen and (max-width: 992px) {
+  .hero {
+      min-height: 500px;
+  }  
 
-        &:hover {
-            border-color: $plava;
-        }
+  #services {
+      .sectionTitle {
+          text-align: center;
+          margin-top: 30px;
+      }
+
+      .underline {
+          margin: 10px auto 30px;
+      }
+  }
+
+  #featured {
+      #featuredImg {
+          order: 1;
+      }
+      #desc {
+          order: 2;
+      }
+  }
+
+  #success {
+      min-height: 450px;
+  }
+
+  #latest .imgContainer p {
+      font-size: 15px;
+  }
+
+  #latest .rightbottom {
+      right: 80px;
+  }
+
+  #newsletter input {
+      width: 40%;
+  }
+} 
+
+@media screen and (max-width: 601px) {
+    .hero #headerText {
+        margin-top: 13%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #success {
+        min-height: 600px;
     }
 }
