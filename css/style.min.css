@@ -117,7 +117,7 @@ button {
   min-height: 400px;
 }
 
-#fyp select {
+#fyp select, #filters select {
   margin-bottom: 1.5rem;
 }
 
@@ -530,6 +530,7 @@ textarea {
 #catalog #pagination {
   width: 200px;
   margin: 0px auto;
+  margin-bottom: 30px;
 }
 
 /* CONTACT PAGE */
