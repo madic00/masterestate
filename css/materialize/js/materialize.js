@@ -4424,7 +4424,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     return Tabs;
   }(Component);
 
-  M.Tabs = Tabs;
+  //M.Tabs = Tabs;
 
   if (M.jQueryLoaded) {
     M.initializeJqueryWrapper(Tabs, 'tabs', 'M_Tabs');
@@ -4765,7 +4765,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     return Tooltip;
   }(Component);
 
-  M.Tooltip = Tooltip;
+ //M.Tooltip = Tooltip;
 
   if (M.jQueryLoaded) {
     M.initializeJqueryWrapper(Tooltip, 'tooltip', 'M_Tooltip');

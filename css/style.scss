@@ -271,8 +271,11 @@ button {
     .overlay {
         opacity: 0;
         transition: opacity .5s ease-out;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        width: 90%;
     }
-
+    
     .imgContainer {
         position: relative;
         color: #fff;
@@ -286,6 +289,7 @@ button {
 
         p {
             font-size: 17px;
+            color: #000;
         }
 
         img {
@@ -294,19 +298,20 @@ button {
             &:hover {
                 box-shadow: 1px 8px 20px grey;
                 transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+                opacity: 0.8;
             }
         }
     }
 
     .leftbottom {
         position: absolute;
-        bottom: 2px;
+        bottom: 0px;
         left: 20px;
     }
 
     .rightbottom {
         position: absolute;
-        bottom: 2px;
+        bottom: 0px;
         right: 20px;
     }
 }
@@ -316,11 +321,11 @@ button {
 #newsletter {
     margin: 60px auto;
 
-    input {
-        width: 60%;
-        margin-right: 40px;
-        margin-left: 80px;
-    }
+    // input {
+    //     width: 60%;
+    //     margin-right: 40px;
+    //     margin-left: 80px;
+    // }
 
     button {
         padding: 5px 40px;
@@ -348,6 +353,14 @@ footer {
         display: inline-block;
     }
 
+    .quickLinks a {
+        font-size: 16px;
+
+        &:hover {
+            color: $plava;
+            transition: color 0.5s;
+        }
+    }
 }
 
 .useful, .custom {
@@ -421,38 +434,24 @@ textarea {
     padding-bottom: 60px;
     color: #fff;
 
-    #carouselExampleIndicators {
-        min-height: 200px;
+
+    .slider .slides {
+        background: none;
     }
 
-    .carousel-item {
-        margin-bottom: 100px;
+    .slides q {
+        font-size: 2rem;
     }
 
-    .quotes {
-        padding: 30px;
-        height: 150px;
-    }
-    
-    p {
-        margin-top: 20px;
-        font-size: 18px;
+    .slides p {
+        font-size: 1.5rem;
     }
 
-    .testCompany {
-        font-size: 15px;
+    .slides p:first-child {
+        margin-top: 30px;
     }
 
-    .carousel-indicators {
 
-        li {
-            width: 15px;
-            height: 15px;
-            border-radius: 100%;
-            background-color: $plava;
-            margin-top: 40px;
-        }
-    }
 }
 
 #meet {
@@ -485,7 +484,7 @@ textarea {
     }
 
     .welcome {
-        margin-top: 10%;
+        margin-top: 150px;
     }
 }
 
@@ -637,12 +636,17 @@ textarea {
   }
 
   #newsletter input {
-      width: 40%;
+      width: 90%;
+      margin: 20px 0px;
+  }
+
+  #newsletter .align-center {
+      text-align: center;
   }
 } 
 
 @media screen and (max-width: 601px) {
-    .hero #headerText {
+    #heroIndex #headerText {
         margin-top: 13%;
     }
 
@@ -660,7 +664,7 @@ textarea {
 }
 
 @media screen and (max-width: 575px) {
-    .hero #headerText {
+    #heroIndex #headerText {
         margin-top: 20%;
     }
     

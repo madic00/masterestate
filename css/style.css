@@ -270,6 +270,9 @@ button {
   opacity: 0;
   -webkit-transition: opacity .5s ease-out;
   transition: opacity .5s ease-out;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 90%;
 }
 
 #latest .imgContainer {
@@ -284,6 +287,7 @@ button {
 
 #latest .imgContainer p {
   font-size: 17px;
+  color: #000;
 }
 
 #latest .imgContainer img {
@@ -295,29 +299,24 @@ button {
           box-shadow: 1px 8px 20px grey;
   -webkit-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0.8;
 }
 
 #latest .leftbottom {
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   left: 20px;
 }
 
 #latest .rightbottom {
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   right: 20px;
 }
 
 /* NEWSLETTER */
 #newsletter {
   margin: 60px auto;
-}
-
-#newsletter input {
-  width: 60%;
-  margin-right: 40px;
-  margin-left: 80px;
 }
 
 #newsletter button {
@@ -343,6 +342,16 @@ footer button {
 
 footer .useful ul li {
   display: inline-block;
+}
+
+footer .quickLinks a {
+  font-size: 16px;
+}
+
+footer .quickLinks a:hover {
+  color: #007bff;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .useful .fa, .custom .fa {
@@ -414,34 +423,20 @@ textarea {
   color: #fff;
 }
 
-#testimonials #carouselExampleIndicators {
-  min-height: 200px;
+#testimonials .slider .slides {
+  background: none;
 }
 
-#testimonials .carousel-item {
-  margin-bottom: 100px;
+#testimonials .slides q {
+  font-size: 2rem;
 }
 
-#testimonials .quotes {
-  padding: 30px;
-  height: 150px;
+#testimonials .slides p {
+  font-size: 1.5rem;
 }
 
-#testimonials p {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-#testimonials .testCompany {
-  font-size: 15px;
-}
-
-#testimonials .carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #007bff;
-  margin-top: 40px;
+#testimonials .slides p:first-child {
+  margin-top: 30px;
 }
 
 #meet {
@@ -472,7 +467,7 @@ textarea {
 }
 
 .hero .welcome {
-  margin-top: 10%;
+  margin-top: 150px;
 }
 
 #filters {
@@ -605,12 +600,16 @@ textarea {
     right: 80px;
   }
   #newsletter input {
-    width: 40%;
+    width: 90%;
+    margin: 20px 0px;
+  }
+  #newsletter .align-center {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 601px) {
-  .hero #headerText {
+  #heroIndex #headerText {
     margin-top: 13%;
   }
   #latest .imgContainer p {
@@ -625,7 +624,7 @@ textarea {
 }
 
 @media screen and (max-width: 575px) {
-  .hero #headerText {
+  #heroIndex #headerText {
     margin-top: 20%;
   }
   #success {

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>Nova kolekcija</title>
+		<link>https://madic00.github.io/Arhaik/prodavnica.html</link>
+		<description>Budite u toku sa našim novim akcijama</description>
+		<item>
+			<title>Novi džemperi</title>
+			<description>Ekskluzivo pogledajte našu novu kolekciju džempera</description>
+			<link>https://madic00.github.io/Arhaik/prodavnica.html</link>
+		</item>
+		<item>
+			<title>Nova boja</title>
+			<description>Zbog vašeg velikog broja zahteva uveli smo i džemper žute boje.</description>
+			<link>https://madic00.github.io/Arhaik/prodavnica</link>
+		</item>
+	</channel>
+</rss>
