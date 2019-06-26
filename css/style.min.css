@@ -508,6 +508,10 @@ textarea {
   display: inline-block;
 }
 
+#catalog .modal-body .img-fluid {
+    margin-bottom: 30px;
+}
+
 #catalog .modal-body ul li::before {
   font-family: 'fontawesome';
   line-height: 1;
@@ -644,6 +648,12 @@ textarea {
 
     #testimonials .slides p {
         font-size: 14px !important;
+    }
+    #catalog .modal-body ul {
+        display: block;
+    }
+    #catalog .modal-body ul:last-child {
+        float: none !important;
     }
 }
 /*# sourceMappingURL=style.css.map */
