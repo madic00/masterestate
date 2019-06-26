@@ -674,4 +674,16 @@ textarea {
     #success {
         min-height: 600px;
     }
+
+    #testimonials {
+        min-height: 500px;
+    }
+
+    #testimonials .slides q {
+        font-size: 16px !important;
+    }
+
+    #testimonials .slides p {
+        font-size: 14px !important;
+    }
 }
