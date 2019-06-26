@@ -5,6 +5,7 @@ $plava: #007bff;
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Poppins, "Open Sans", sans-serif
 }
 
 ul {
@@ -383,6 +384,7 @@ textarea {
 
     #aboutTitle {
         font-size: 3.5vw;
+        font-weight: 600;
     }
 
     p {
@@ -399,6 +401,18 @@ textarea {
     }
 }
 
+#meet {
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+
+    p > a {
+        border-bottom: 1px solid $plava;
+    }
+}
 /* TESTIMONIALS */
 #testimonials {
     background-image: url('../img/review-bg.webp');
@@ -535,8 +549,6 @@ textarea {
 }
 
 
-
-
 /* CONTACT PAGE */
 #contactHero {
     min-height: 400px;
@@ -633,9 +645,25 @@ textarea {
     .hero #headerText {
         margin-top: 13%;
     }
+
+    #latest .imgContainer p {
+        font-size: 10px;
+    }
+    
+    #latest .rightbottom {
+      right: 20px;
+  }
+
+  footer .flinks {
+      text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
+    .hero #headerText {
+        margin-top: 20%;
+    }
+    
     #success {
         min-height: 600px;
     }

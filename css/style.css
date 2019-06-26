@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Poppins, "Open Sans", sans-serif;
 }
 
 ul {
@@ -376,6 +377,7 @@ textarea {
 
 #about #aboutTitle {
   font-size: 3.5vw;
+  font-weight: 600;
 }
 
 #about p {
@@ -389,6 +391,18 @@ textarea {
 
 .breadcrumb a {
   font-size: 20px;
+}
+
+#meet h2 {
+  font-size: 3rem;
+}
+
+#meet p {
+  font-size: 1.2rem;
+}
+
+#meet p > a {
+  border-bottom: 1px solid #007bff;
 }
 
 /* TESTIMONIALS */
@@ -599,9 +613,21 @@ textarea {
   .hero #headerText {
     margin-top: 13%;
   }
+  #latest .imgContainer p {
+    font-size: 10px;
+  }
+  #latest .rightbottom {
+    right: 20px;
+  }
+  footer .flinks {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  .hero #headerText {
+    margin-top: 20%;
+  }
   #success {
     min-height: 600px;
   }
